@@ -1,0 +1,76 @@
+.main-body{
+  background-color:black;
+  color: white;
+}
+
+.mrg-r{
+  margin-right:4%;
+}
+.nav-link{
+  color:white !important;
+}
+.extra-prop{
+  justify-content: center;
+  align-items:center;
+}
+.custom-row{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+.btn1{
+  width:100%;
+}
+.container-class{
+  background-image: url("../images/kv.jpg");
+    background-size: cover;
+        background-repeat: no-repeat;
+   
+}
+.margin-tb{
+	margin-top:4%;
+	margin-bottom:4%;
+}
+.form-div{
+  margin-top:2%;
+  margin-bottom:6%;
+}
+form label {
+    display: inline-block;
+    width: 100px;
+  }
+   
+  form div {
+    margin-bottom: 10px;
+  }
+   
+  .error {
+    color: red;
+    margin-left: 5px;
+  }
+   
+  label.error {
+    display: inline;
+  }
+  .image-prop{
+    width:100%;
+  }
+  
+  .retailer-card{
+    height:246px;
+   background-color:black ;
+}
+.rl-n{
+    font-size:19px!important;
+    padding-top: 5%;
+    padding-left: 6%;
+}
+.rl-p{
+    padding-top: 5%;
+    padding-left: 6%;
+    line-height: 0px;
+}
+.rl-btn{
+    margin-left:2%;
+    margin-top:2%;
+}
