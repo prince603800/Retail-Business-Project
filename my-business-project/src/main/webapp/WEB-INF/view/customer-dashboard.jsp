@@ -13,8 +13,6 @@
 	 
 	 <h3>Please select one retailer!!!</h3>
 	 
-	 
-	
 	 <div class = "container">
             <div class = "row">
              	<c:forEach items = "${retailersInfo}" var = "listRetailers">

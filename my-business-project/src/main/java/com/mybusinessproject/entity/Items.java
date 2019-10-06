@@ -1,10 +1,14 @@
 package com.mybusinessproject.entity;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
+@Entity
+@Table(name = "items")
 public class Items {
 
 	@Id
@@ -14,11 +18,21 @@ public class Items {
 	@Column(name = "itemname")
 	private String itemname;
 	
-	@Column(name = "type")
-	private String type;
+	@Column(name = "itemsize")
+	private String itemsize;
 	
-	@Column(name = "retailername")
-	private String retailername;
+	@Column(name = "retailerid")
+	private int retailerid;
+
+	public Items() {}
+	
+	
+	public Items(int id, String itemname, String itemsize, int retailerid) {
+		this.id = id;
+		this.itemname = itemname;
+		this.itemsize = itemsize;
+		this.retailerid = retailerid;
+	}
 
 	public int getId() {
 		return id;
@@ -36,25 +50,29 @@ public class Items {
 		this.itemname = itemname;
 	}
 
-	public String getType() {
-		return type;
+
+
+	public String getItemsize() {
+		return itemsize;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+
+	public void setItemsize(String itemsize) {
+		this.itemsize = itemsize;
 	}
 
-	public String getRetailername() {
-		return retailername;
+
+	public int getRetailerid() {
+		return retailerid;
 	}
 
-	public void setRetailername(String retailername) {
-		this.retailername = retailername;
+	public void setRetailerid(int retailerid) {
+		this.retailerid = retailerid;
 	}
 
 	@Override
 	public String toString() {
-		return "Items [id=" + id + ", itemname=" + itemname + ", type=" + type + ", retailername=" + retailername + "]";
+		return "Items [id=" + id + ", itemname=" + itemname + ", type=" + itemsize + ", retailername=" + retailerid + "]";
 	}
 	
 }

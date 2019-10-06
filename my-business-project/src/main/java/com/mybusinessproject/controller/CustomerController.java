@@ -21,6 +21,7 @@ public class CustomerController {
 	
 	@Autowired
 	CustomerService customerService;
+	
 	//controller for registration jsp
 	@GetMapping("/cr-page")
 	public String customerRegistrationPage(Model theModel) {
@@ -74,13 +75,13 @@ public class CustomerController {
 	}
 	
 	
-	
 	@GetMapping("/customerdashboard-retailerdetail")
 	public String customerdashboardRetailerDetail(@RequestParam("retailerId") int retailerId,@RequestParam("customerId") int  customerId) {
 		
 		System.out.println(retailerId);
 		System.out.println(customerId);
-		
+	
 		return "customerdashboard-retailerdetail";
 	}
+	
 }
